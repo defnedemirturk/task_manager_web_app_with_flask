@@ -23,9 +23,16 @@ def index():
 
 
 # add route and function for /about page
-@app.route('/about')
+# GET and POST requests are allowed
+@app.route('/about', methods=['GET', 'POST'])
 def about():
     # create an instance of AddTaskForm
     form = forms.AddTaskForm()
+
+    if form.validate_on_submit():
+        print('Submitted title', form.title.data)
+        return render_template('about.html',
+                               form=form,
+                               title=form.title.data)
     # return about.html template and include the task form
     return render_template('about.html', form=form)

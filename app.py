@@ -7,6 +7,7 @@ from flask import Flask
 
 #create an instance (application) of the Flask class
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'secret-key'
 
 # after the app has been instantiated 
 # we should import all from routes.py module
