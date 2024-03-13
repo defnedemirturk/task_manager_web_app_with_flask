@@ -1,4 +1,4 @@
-# Task Manager Web Application
+# Task Manager (TO-DO List) Web Application
 
 A simple task manager web application with features such as: add, remove and edit tasks. jinja for HTML rendering and SQLAlchemy for ORM functionalities are used as part of the implementation. To have a modular structure and to increase reuseability, routes and functions are implemented as a seperate module. 
 
