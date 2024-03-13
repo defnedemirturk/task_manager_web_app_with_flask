@@ -4,10 +4,18 @@
 
 #import Flask class from the flask module
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
 #create an instance (application) of the Flask class
 app = Flask(__name__)
+
+#set up configuration keys 
 app.config['SECRET_KEY'] = 'secret-key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+
+#create our database instance
+#this instance will use models.py module for data model 
+db = SQLAlchemy(app)
 
 # after the app has been instantiated 
 # we should import all from routes.py module
