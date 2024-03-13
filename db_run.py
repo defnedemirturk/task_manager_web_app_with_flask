@@ -1,3 +1,6 @@
+# @author : Defne Demirtuerk
+# This module includes the necessary python code for CLI to create a database instance
+
 from app import db
 
 db.create_all()

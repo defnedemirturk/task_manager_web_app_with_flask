@@ -1,5 +1,6 @@
-from app import db
+# @author : Defne Demirtuerk
 
+from app import db
 
 # Task object in database
 class Task(db.Model):

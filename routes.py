@@ -1,4 +1,6 @@
 
+# @author : Defne Demirtuerk
+
 # we will keep the routes and functionalities here separately
 # to know what is used as "app" and "render_template" 
 # we will import them from app.py module
